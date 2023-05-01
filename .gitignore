@@ -1,0 +1,6 @@
+*.exe
+*.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfvars
+/aws-terraform-project/.terraform
