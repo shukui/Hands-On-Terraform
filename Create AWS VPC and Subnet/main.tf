@@ -6,7 +6,7 @@ variable vpc_cidr_block {}
 variable subnet_cidr_block {}
 variable avail_zone {}
 variable env_prefix {}
-variable my-ip {}
+variable my_ip {}
 
 resource "aws_vpc" "myapp-vpc" {
   cidr_block = var.vpc_cidr_block
@@ -70,7 +70,7 @@ resource "aws_security_group" "myapp-sg"  {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_block = [var.my-ip]
+    cidr_block = [var.my_ip]
   }
 
   ingress {
